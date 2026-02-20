@@ -3,6 +3,8 @@
 <head>
   <title>Jeggy Ocenar | Personal Page</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/images.css">
+
 </head>
 <body>
 
@@ -42,8 +44,24 @@
 
   </div>
 
+  <h1>Example 'v-for' to create images and text</h1>
+<p>The 'v-for' directive is used to create images and text based on the 'manyFoods' array in the Vue instance.</p>
+
+<div id="app2">
+  <div>
+    <figure v-for="x in manyFoods">
+      <img v-bind:src="x.url">
+      <figcaption>{{ x.name }}</figcaption>
+    </figure>
+  </div>
+  
+
+</div>
+
+
   <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.js"></script>
   <script src="./js/vue.js"></script>
+    <script src="./js/images.js"></script>
 
 </body>
 </html>
