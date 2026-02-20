@@ -1,4 +1,4 @@
-const { createApp } = Vue;
+
 
 const app2 = createApp({
   data() {
