@@ -1,11 +1,12 @@
 
-  const app = Vue.createApp({
-   data() {
+const app = Vue.createApp({
+  data() {
     return {
-     message: "Hello World!"
+      name: "Jeggy Ocenar",
+      role: "Aspiring System Administrator",
+      description: "Interested in system architecture, servers, and clean infrastructure design."
     }
-   }
-  })
-  
-  app.mount('#app')
+  }
+})
 
+app.mount('#app')

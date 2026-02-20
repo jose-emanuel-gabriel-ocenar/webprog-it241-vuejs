@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My first Vue page</title>
-<link rel="stylesheet" href="css/style.css">
+  <title>Jeggy's Vue Profile</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>Vue Example</h1>
+  <div id="app" class="card">
+    <h1>{{ name }}</h1>
+    <p class="role">{{ role }}</p>
+    <p class="description">{{ description }}</p>
+  </div>
 
-<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
-
-<div id="app">
-  {{ message }}
-</div>
-
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-<script src="js/vue.js"></script>
-
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="js/vue.js"></script>
 
 </body>
 </html>

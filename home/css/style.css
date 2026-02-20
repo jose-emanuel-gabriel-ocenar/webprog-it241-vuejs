@@ -1,7 +1,34 @@
 
-    #app {
-      display: inline-block;
-      padding: 10px;
-      font-size: x-large;
-      background-color: lightgreen;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 300px;
+}
+
+.card h1 {
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #2c7be5;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
