@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jeggy's Vue Profile</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Jeggy Ocenar | Personal Page</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
   <div id="app" class="card">
     <h1>{{ name }}</h1>
     <p class="role">{{ role }}</p>
-    <p class="description">{{ description }}</p>
+
+    <section>
+      <h3>About Me</h3>
+      <p>{{ about }}</p>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li v-for="skill in skills" :key="skill">
+          {{ skill }}
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Goals</h3>
+      <p>{{ goal }}</p>
+    </section>
+
+    <button @click="toggleStatus">
+      {{ statusButton }}
+    </button>
+
+    <p v-if="available" class="status available">
+      ✅ Open for learning opportunities
+    </p>
+    <p v-else class="status busy">
+      🚀 Currently building projects
+    </p>
+
   </div>
 
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="js/vue.js"></script>
+  <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.js"></script>
+  <script src="./js/vue.js"></script>
 
 </body>
 </html>
