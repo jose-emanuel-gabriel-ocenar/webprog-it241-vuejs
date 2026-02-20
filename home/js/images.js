@@ -1,6 +1,6 @@
 const { createApp } = Vue;
 
-createApp({
+const app2 = createApp({
   data() {
     return {
       manyFoods: [
@@ -12,8 +12,8 @@ createApp({
         { name: "Pizza", url: "https://www.w3schools.com/vue/img_pizza.svg" },
         { name: "Rice", url: "https://www.w3schools.com/vue/img_rice.svg" }
       ]
-    };
-  },
+    }
+  }
 })
 
-app2.mount("#app2");
+app2.mount("#app2")
