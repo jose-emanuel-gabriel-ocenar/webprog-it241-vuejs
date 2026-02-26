@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { supabase } from 'src/lib/supabaseClient.js'
+import { supabase } from '/src/lib/supabaseClient.js'
 
 const instruments = ref([])
 
